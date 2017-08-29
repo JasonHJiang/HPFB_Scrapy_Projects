@@ -1,4 +1,4 @@
-## 2017 New Active Substance (NAS) in Canada
+## 2017 New Active Substances (NAS) in Canada
 All new substance approved (or marketed) in 2017 can be referred to: [Health Canada New Drug Authorizations: 2016 Highlights](https://www.canada.ca/en/health-canada/services/publications/drugs-health-products/health-canada-new-drug-authorizations-2016-highlights.html#a6).
 
 NAS can be mapped with Drug Products recorded in Masterlist, which contains DIN (Drug Identification Number), PM (Product Monographs) Numbers, ATC Codes, etc.
