@@ -23,7 +23,3 @@ Various settings can be determined, in our case, we need to ensure that the pipe
 
 ## tiff.csv & txt.csv
 Outputs from scrapy
-
-## Scrapyd
-$ curl http://localhost:6800/schedule.json -d project=superscrapy -d spider=txtspider
-$ curl http://localhost:6800/schedule.json -d project=superscrapy -d spider=tiffspider
