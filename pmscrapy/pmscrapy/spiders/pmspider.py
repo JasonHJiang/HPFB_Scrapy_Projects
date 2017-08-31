@@ -186,6 +186,9 @@ def download_pdf(url):
     memoryFile = StringIO(remoteFile)
     pdfFile = PdfFileReader(memoryFile)
     
+    if pdfFile.isEncrypted:
+        pdfFile.decrypt('')
+    
     for pageNum in xrange(pdfFile.getNumPages()):
             currentPage = pdfFile.getPage(pageNum)
             #currentPage.mergePage(watermark.getPage(0))
