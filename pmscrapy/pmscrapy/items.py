@@ -21,20 +21,3 @@ class pmScrapeItem(scrapy.Item):
           if key not in self.fields:
               self.fields[key] = Field()
           self._values[key] = value
-          
-          file_type = Field()
-          file_name = Field()
-          file_path = Field()
-          date_scraped = Field()
-          content = Field()
-          pm_page_one = Field()
-          pm_number = Field()
-          content_length = Field()
-          atc_code = Field()
-          synonyms=  Field()
-          categories = Field()
-          dosages = Field()
-          pt_term = Field()
-          matchiterm = Field()
-          contentindex = Field()
-          pt_term_index = Field()
