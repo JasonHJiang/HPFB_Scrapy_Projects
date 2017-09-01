@@ -344,19 +344,16 @@ class pmspider(scrapy.Spider):
         pmspiderItem['project']=self.settings.get('BOT_NAME')
         pmspiderItem['spider']=self.name
         pmspiderItem['content_length']=len(content)
-        # pmspiderItem['pt_term_index']=findItem(ptpm_list,pm_number)[0][0]
-        # pt_term_index=findItem(ptpm_list,pm_number)[0][0]
-        # pmspiderItem['pt_term']=ptpm_list[pt_term_index][1]
       
         
-        pt_term_index = []
-        pt_term_index=findItem(ptpm_list,pm_number)
-        if pt_term_index == []:
-            pmspiderItem['pt_term'] = 'NA'
-            pmspiderItem['pt_term_index'] = 'NA'
-        else:
-            pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1]
-            pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
+        # pt_term_index = []
+        # pt_term_index=findItem(ptpm_list,pm_number)
+        # if pt_term_index == []:
+        #     pmspiderItem['pt_term'] = u'NA'
+        #     pmspiderItem['pt_term_index'] = u'NA'
+        # else:
+        #     pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1].decode("utf-8")
+        #     pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
         
         count = 0
         for k in range(len(name_list)):
@@ -401,11 +398,11 @@ class pmspider(scrapy.Spider):
             #                 print('yes1')
             #                 break
         if count == 0:
-            pmspiderItem['atc_code']= 'NA'
-            pmspiderItem['synonyms']= 'NA'
-            pmspiderItem['categories']= 'NA'
-            pmspiderItem['dosages']= 'NA'
-            pmspiderItem['matchiterm'] = 'NA'
+            pmspiderItem['atc_code']= u'NA'
+            pmspiderItem['synonyms']= u'NA'
+            pmspiderItem['categories']= u'NA'
+            pmspiderItem['dosages']= u'NA'
+            pmspiderItem['matchiterm'] = u'NA'
             print('no')
         os.remove(temp) 
         return pmspiderItem
@@ -445,14 +442,14 @@ class pmspider(scrapy.Spider):
         pmspiderItem['language'] = lang
         f.close()
 
-        pt_term_index = []
-        pt_term_index=findItem(ptpm_list,pm_number)
-        if pt_term_index == []:
-            pmspiderItem['pt_term'] = 'NA'
-            pmspiderItem['pt_term_index'] = 'NA'
-        else:
-            pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1]
-            pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
+        # pt_term_index = []
+        # pt_term_index=findItem(ptpm_list,pm_number)
+        # if pt_term_index == []:
+        #     pmspiderItem['pt_term'] = u'NA'
+        #     pmspiderItem['pt_term_index'] = u'NA'
+        # else:
+        #     pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1].decode("utf-8")
+        #     pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
 
 
         count = 0
@@ -490,11 +487,10 @@ class pmspider(scrapy.Spider):
             #             count = count + 1
             #             break
         if count == 0:
-            pmspiderItem['atc_code']= 'NA'
-            pmspiderItem['synonyms']= 'NA'
-            pmspiderItem['categories']= 'NA'
-            pmspiderItem['dosages']= 'NA'
-            pmspiderItem['matchiterm'] = 'NA'
+            pmspiderItem['atc_code']= u'NA'
+            pmspiderItem['synonyms']= u'NA'
+            pmspiderItem['categories']= u'NA'
+            pmspiderItem['dosages']= u'NA'
+            pmspiderItem['matchiterm'] = u'NA'
         os.remove(temp) 
         return pmspiderItem
-    
