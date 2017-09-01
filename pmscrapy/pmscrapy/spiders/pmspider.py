@@ -42,6 +42,7 @@ from tika import language
 import itertools
 import string
 import re
+import shutil
 
 ### system setting ###
 es = Elasticsearch('http://elastic-gate.hc.local:80')
@@ -188,7 +189,7 @@ def download_pdf(url):
     
     if pdfFile.isEncrypted:
         pdfFile.decrypt('')
-    
+        
     for pageNum in xrange(pdfFile.getNumPages()):
             currentPage = pdfFile.getPage(pageNum)
             #currentPage.mergePage(watermark.getPage(0))
@@ -209,17 +210,14 @@ class pmspider(scrapy.Spider):
             data=myfile.read()
         list = data.split('\n')
         list = filter(None, list)
-        while True:
-            count = 0
-            for file in list:
-                file_name = file.split('.PDF')[0]
-                res=es.search(index="test_pm", body={"query": {"match": {"pm_number": file_name}}})
-                if (res['hits']['total'] != 0):
-                    list.remove(file)
-                    print('remove' + file)
-                    count = count + 1
-            if count == 0:
-                break
+        
+        for file in list:
+            file_name = file.split('.PDF')[0]
+            res=es.search(index="test_pm", body={"query": {"match": {"pm_number": file_name}}})
+            if (res['hits']['total'] != 0):
+                list.remove(file)
+                print('remove' + file)
+
         list = filter(None, list)
         with open('list.txt', 'w') as myfile:
             for ele in list:
@@ -229,59 +227,74 @@ class pmspider(scrapy.Spider):
         list.sort(key=natural_keys)
         file_directory = []
         file_directory = ['https://pdf.hres.ca/dpd_pm/' + file_dir for file_dir in list]
-        print(file_directory)
+        # print(file_directory)
         for file_dir in file_directory:
             download_pdf(file_dir)
             local_file = basename(file_dir)
-            print('local file is ' + local_file)
+            #print('local file is ' + local_file)
             # local_file = basename(file_dir)
-            if ' '.join(convert(local_file, pages=[0]).split()) == '':
-                pypdf_to_image.convert(('file:///home/hjiang/pmscrapy/pdf_folder/' + local_file))
-            else:
+            if ' '.join(convert(local_file, pages=[0]).split()) != '':
                 yield scrapy.Request(('file:///home/hjiang/pmscrapy/pdf_folder/' + local_file), self.txtparser)
-                
-        ### OCRtest on images
-        spath = r"/home/hjiang/pmscrapy/pdftoimage"
-        directorylist = []
-        dir_list = []
-        file_name_list = []
-        root_name = []
-        file_dir_list = []
-        file_directory = []
-        for roots, dirs, file in os.walk(spath,topdown = True):
-            root_name.append(roots)
-            for dir in dirs:
-                dir_list.append(dir)
-            for file in file:
-                file_dir_list.append(roots + '/' + file)
-                file_name_list.append(file)
-
-        file_dir_list.sort(key=natural_keys)
-        dir_list.sort(key=natural_keys)
-        file_name_list.sort(key=natural_keys)
-        root_name.sort(key=natural_keys)
-        directorylist = [dir_list,file_name_list,root_name]
-        file_directory = [file_dir for file_dir in file_dir_list]
-        file_directory.sort(key=natural_keys)
-        
-        for i in range(1,(len(directorylist[2]))):
-            file_obj = codecs.open("/home/hjiang/pmscrapy/pdftoimage_text/%s.txt"%(basename(directorylist[2][i])), 'a',encoding='utf-8')
-            count = 0
-            for file in file_directory:
-                if (file.find(directorylist[2][i]) != (-1)):
+                os.remove('/home/hjiang/pmscrapy/pdf_folder/%s'%local_file)
+            else:
+                pypdf_to_image.convert(('file:///home/hjiang/pmscrapy/pdf_folder/' + local_file))
+                file_obj = codecs.open("/home/hjiang/pmscrapy/pdftoimage_text/%s.txt"%(local_file.split('.PDF')[0]), 'a',encoding='utf-8')
+                local_directory = os.listdir('/home/hjiang/pmscrapy/pdftoimage/%s'%local_file.split('.PDF')[0])
+                local_directory = sorted(local_directory)
+                count = 0
+                for file in local_directory:
+                    # if (file.find(directorylist[2][i]) != (-1)):
                     if file.endswith('.jpeg'):
-                        print(file)
-                        filedata = OCRtest(file)
+                        filedata = OCRtest('/home/hjiang/pmscrapy/pdftoimage/%s/%s'%(local_file.split('.PDF')[0],file))
                         count = count + 1
                         file_obj.write(filedata + '\n\n\n' + 'Page:%s'%count)
-
-        ### Start scraping
-        spath = r"/home/hjiang/pmscrapy/pdftoimage_text"
-        file_list = []
-        for roots, dirs, file in os.walk(spath,topdown = True):
-            for file in file:
-                file = 'file://' + roots + '/' + file
-                yield scrapy.Request(file, self.imageparser)
+        
+                ### Start scraping
+                yield scrapy.Request("file:///home/hjiang/pmscrapy/pdftoimage_text/%s.txt"%(local_file.split('.PDF')[0]), self.imageparser)
+                os.remove('/home/hjiang/pmscrapy/pdf_folder/%s'%local_file)
+                shutil.rmtree('/home/hjiang/pmscrapy/pdftoimage/%s'%local_file.split('.PDF')[0]) 
+        # ### OCRtest on images
+        # spath = r"/home/hjiang/pmscrapy/pdftoimage"
+        # directorylist = []
+        # dir_list = []
+        # file_name_list = []
+        # root_name = []
+        # file_dir_list = []
+        # file_directory = []
+        # for roots, dirs, file in os.walk(spath,topdown = True):
+        #     root_name.append(roots)
+        #     for dir in dirs:
+        #         dir_list.append(dir)
+        #     for file in file:
+        #         file_dir_list.append(roots + '/' + file)
+        #         file_name_list.append(file)
+        # 
+        # file_dir_list.sort(key=natural_keys)
+        # dir_list.sort(key=natural_keys)
+        # file_name_list.sort(key=natural_keys)
+        # root_name.sort(key=natural_keys)
+        # directorylist = [dir_list,file_name_list,root_name]
+        # file_directory = [file_dir for file_dir in file_dir_list]
+        # file_directory.sort(key=natural_keys)
+        
+        # for i in range(1,(len(directorylist[2]))):
+        #     file_obj = codecs.open("/home/hjiang/pmscrapy/pdftoimage_text/%s.txt"%(basename(directorylist[2][i])), 'a',encoding='utf-8')
+        #     count = 0
+        #     for file in file_directory:
+        #         if (file.find(directorylist[2][i]) != (-1)):
+        #             if file.endswith('.jpeg'):
+        #                 print(file)
+        #                 filedata = OCRtest(file)
+        #                 count = count + 1
+        #                 file_obj.write(filedata + '\n\n\n' + 'Page:%s'%count)
+        # 
+        # ### Start scraping
+        # spath = r"/home/hjiang/pmscrapy/pdftoimage_text"
+        # file_list = []
+        # for roots, dirs, file in os.walk(spath,topdown = True):
+        #     for file in file:
+        #         file = 'file://' + roots + '/' + file
+        #         yield scrapy.Request(file, self.imageparser)
 
     def txtparser(self, response):
         pmspiderItem = pmScrapeItem()
@@ -343,7 +356,7 @@ class pmspider(scrapy.Spider):
             pmspiderItem['pt_term_index'] = 'NA'
         else:
             pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1]
-            pmspiderItem['pt_term_index'] = pt_term_index[0][0]
+            pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
         
         count = 0
         for k in range(len(name_list)):
@@ -364,7 +377,6 @@ class pmspider(scrapy.Spider):
                     pmspiderItem['categories']=content_list[content_index][3]
                     pmspiderItem['dosages']=content_list[content_index][4]
                     pmspiderItem['matchiterm'] = name_list[k]
-                    pmspiderItem['contentindex'] = content_index
                     count = count + 1
                     print('yes')
                     break
@@ -385,7 +397,6 @@ class pmspider(scrapy.Spider):
             #                 pmspiderItem['categories']=content_list[content_index][3]
             #                 pmspiderItem['dosages']=content_list[content_index][4]
             #                 pmspiderItem['matchiterm'] = synonyms
-            #                 pmspiderItem['contentindex'] = content_index
             #                 count = count + 1
             #                 print('yes1')
             #                 break
@@ -395,7 +406,6 @@ class pmspider(scrapy.Spider):
             pmspiderItem['categories']= 'NA'
             pmspiderItem['dosages']= 'NA'
             pmspiderItem['matchiterm'] = 'NA'
-            pmspiderItem['contentindex'] = 'NA'
             print('no')
         os.remove(temp) 
         return pmspiderItem
@@ -435,13 +445,14 @@ class pmspider(scrapy.Spider):
         pmspiderItem['language'] = lang
         f.close()
 
-        if pm_number in pmnumber_list:
-            pt_term_index=pmnumber_list.index(pm_number)
-            pmspiderItem['pt_term'] = ptpm_list[pt_term_index][0]
-            pmspiderItem['pt_term_index'] = pt_term_index
-        else:
+        pt_term_index = []
+        pt_term_index=findItem(ptpm_list,pm_number)
+        if pt_term_index == []:
             pmspiderItem['pt_term'] = 'NA'
             pmspiderItem['pt_term_index'] = 'NA'
+        else:
+            pmspiderItem['pt_term'] = ptpm_list[pt_term_index[0][0]][1]
+            pmspiderItem['pt_term_index'] = str(pt_term_index[0][0]).decode("utf-8")
 
 
         count = 0
@@ -463,7 +474,6 @@ class pmspider(scrapy.Spider):
                     pmspiderItem['categories']=content_list[content_index][3]
                     pmspiderItem['dosages']=content_list[content_index][4]
                     pmspiderItem['matchiterm'] = name_list[k]
-                    pmspiderItem['contentindex'] = content_index
                     count = count + 1
                     break
             # if count == 0:
@@ -477,7 +487,6 @@ class pmspider(scrapy.Spider):
             #             pmspiderItem['categories']=content_list[content_index][3]
             #             pmspiderItem['dosages']=content_list[content_index][4]
             #             pmspiderItem['matchiterm'] = name_list[k]
-            #             pmspiderItem['contentindex'] = content_index
             #             count = count + 1
             #             break
         if count == 0:
@@ -486,7 +495,6 @@ class pmspider(scrapy.Spider):
             pmspiderItem['categories']= 'NA'
             pmspiderItem['dosages']= 'NA'
             pmspiderItem['matchiterm'] = 'NA'
-            pmspiderItem['contentindex'] = 'NA'
         os.remove(temp) 
         return pmspiderItem
-     
+    
