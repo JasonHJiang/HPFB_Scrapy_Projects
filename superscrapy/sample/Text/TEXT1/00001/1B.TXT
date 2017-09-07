@@ -1,0 +1,163 @@
+<DocRevBy>  scrosby  </DocRevBy>
+<DocStatus>  DocRelease  </DocStatus>
+<FoldrRefTx>  Internal Audit Directorate Corporate Services Branch Health Canada
+
+              -I.A.D. Project File # 501/352
+
+              - Supporting Documents - pages 1 to 399  </FoldrRefTx>
+<FoldrRefNo>  1  </FoldrRefNo>
+<STCD>  HCA_AA  </STCD>
+<NoPages>  3  </NoPages>
+<InternalNo>  100047  </InternalNo>
+<DocRecType>  Scanned  </DocRecType>
+<ScanJob> 1 </ScanJob> 
+<BatesNo> 84 seq 86 </BatesNo> 
+<DocSequnce> 47 </DocSequnce> 
+
+<fields__end>
+
+Image: <xref file="i:\hca_aa\00001\1b_01.tif|0">
+------
+0000084 Front
+
+
+
+                    to be returned to E. Somers when signed and dated
+
+
+
+
+                                                        MA14A,, KIA OLZ
+
+                                                         JUL
+                                                          JUIL
+
+
+
+
+
+                     Dro Eugene K, Lsbree, PN,D#
+                     Cirecterl, R"o latory Affairs
+                     Rewastble Read
+                     Electro-N-ucleanics, Inc.
+                     7101 ti"rwood Driv*
+                     COLtNU4 tserylandl, 21046
+
+
+                     Dear'.-'Or, LaO, r":
+
+                             -This is iri response to tho ltifametion recotved April
+                     1986 r"arding VIRGO iffLV-Itt ELISA Test Kits subaitt*d pursusnt to
+                     SQC%ion 26(l) of the 140diCal CVAC*s R*pl4tionS*
+
+                            -.We have tested the sampl*s and reviewed the littom&tion
+                     submitted and have detondned that the followng information Is
+                     required to  enable a couplet* evaluationa,
+
+                             I*   Data submitted on perforeame charactemitics of the
+                                  device and its method of op*ration Shodld inClUde'.
+                                  repeatability &Rd rePrOOCibility data in ter*$ Of
+                                  varijttion betww "says of tho saw posifoi,#* ad
+                                  negativo clinical material. Assay% -must be frm thr*.o
+                                  di ffemt production IOU of the 4*viceo
+
+                                  Smples of tM deviess fnw at lo&st um addition4l
+                                  production lots must also be swmitte(i in =wnt.%
+                                  $UfflClo"t t* PO"tt Od"U#te te$tingf
+[ 0000084 ]
+Image: <xref file="i:\hca_aa\00001\1b_02.tif|0">
+------
+0000085 Front
+
+
+
+
+
+
+
+
+
+
+                              Tht foliming questions reflect the uncertaimty to
+                     intorpratikticii that *xists after reeeiy%,q P-10 'YvYidation of Test
+                     Porfortmal imd p-16 'Out of R4met, Vitlues
+
+                              In dot#rw-inttls whttther #A to4ividual volue is in an
+                     acc"table ratt@qe, do all 00 tnoiviotzal values neo to be both (a)
+                     within 30% of t@,e LPX and ib) I'M tht ran@e 0,1 t4> 9,,3?  If not MW
+                     cme value lie outst4t tlit rmiqe 0.1 to 0.3 *s long 4s it Is ikithln
+                     10% of tlqo. LPXT
+
+                              In          the aftcription of OV'alid&tton of Te-st
+                     Perfol%:@6to* (P-14  and *DWt of RMW Vale*$' (P-IS) need
+                     clarification t-o ra6ve the. *Ohio            , not cle#rly O"rtssed
+                                                      _uity that ii
+                     by th-e- present writo. uv.
+
+                                  Plant description is nmutre@d.,
+                              3.  The co"ositioit of tho pro"sed ENT, In-house panel &*4
+                                  prototol used to assess the potency and spftificity of
+                                  each lot and to ottablish lot to lot parity.
+
+                              .4. micro%iol"ic&l safety assur#Ace,  Dato showin-j
+                                  lnactivatten of the NTLY-111 stmuld also shott the
+                                  freauency ard cano'itions of sampling md how frequently
+                                  isolatiost of maiterial from tintreate4 control matert4il
+                                  is successft;l.
+
+                              6,  Preclinicol physical studies of the devict should show
+                                  fragility and sensitivity of the device  to  possiblo
+                                  unei,"ir,able transport *"d storage conditions snd
+                                  identify other posstble failure modes,
+
+                              6.  Results of all clinical Stu-Sit$ should ioc-lone dat*
+                                  frm trials in a (4nadle" blood donor population.
+
+                                  Additiegal docwontation should inclu4e tho loc-ation of
+                                  laboraterios whwe testitt-9 was partomed,  f'or all
+                                  infemation udmitt*4 include. the "#me$ and
+                                  qualifications of V*rswel responsiblo for    testi rt%
+
+                              The i"for"atfoo r"ufrod is similor to  that  i@imtred  to bo
+                     $Ubaitti-4 f*f' a deViCe $Urto&nt to Part V  of tho 0041C.Ol PoviCes
+                     R"uls,tiofts,  To fecilitate preparatiofv of sur@plementary informa-
+                     tion$ plta" pay portictiter 4tt"ti4m to the t@llowng sections *nd
+                     subsections of the *C,'uit* to the. Preparation of a Sutmission
+                     Pursuant to Port V of tihe Medical Devicts "lotions".
+
+                              Intomistior should be SuWttiRd lr Sufficiciit dotaill  to
+                     enable Sn indepeftdomt ov*lmation of the safety atid efficacy of tbo
+                     dovlct,
+[ 0000085 ]
+Image: <xref file="i:\hca_aa\00001\1b_03.tif|0">
+------
+0000086 Front]
+
+                                                                                                   -2
+
+
+
+
+                                                        3
+
+
+
+                             Enclosed for your fnforeation Is;  1) TeSting prot*Col:
+                     Assays for AAtibody to AIDS Associ4ted Petrovi rues 2) Prolimtistary
+                     result!t obtained usiog VIRGO RTLY-111 lost In this protacol.
+                             Your file wtll be kept activt for 60 working dqys froo the
+                     date of thi s I otter.  Homwer, i t may be mponed at PW oth*r
+                     timeg if ano when infomation beemes availablea,
+
+                                                        Si riceroly
+
+
+
+                                                         O*lGtt4AL STONED n
+                                                         OltiGINAL SIONT PAN
+                                                        AQJ, Listotil, Ph.D.
+                                                        Axsf stant Deputy Mi tif ster
+                     AJL/bC
+[ 0000086 ]
+Image: <xref file="i:\hca_aa\00001\1b_04.tif|0">
+------

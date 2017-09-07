@@ -1,0 +1,207 @@
+<DocFlags>  DocIsOTF  </DocFlags>
+<DocRevBy>  scrosby  </DocRevBy>
+<FoldrRefTx>  Internal Audit Directorate Corporate Services Branch Health Canada
+
+              -I.A.D. Project File # 501/352
+
+              - Supporting Documents - pages 1 to 399  </FoldrRefTx>
+<FoldrRefNo>  1  </FoldrRefNo>
+<STCD>  HCA_AA  </STCD>
+<NoPages>  3  </NoPages>
+<InternalNo>  100001  </InternalNo>
+<DocRecType>  Scanned  </DocRecType>
+<ScanJob> 1 </ScanJob> 
+<BatesNo> 1 seq 3 </BatesNo> 
+<DocSequnce> 1 </DocSequnce> 
+
+<fields__end>
+
+Image: <xref file="i:\hca_aa\00001\1_01.tif|0">
+------
+0000001  Front]
+
+
+
+
+
+         AUDIT NO. 501-352
+
+
+         AUDIT TITLE: HIV-FREE BLOOD
+
+
+         DATE: NOVEMBER 29,1993.
+
+
+         AUDITOR: R. KENDALL
+
+
+
+
+
+
+                               SUPPORTING DOCUMENTS
+
+
+
+
+                   DESCRIPTION OF DOCUMENT                       PAGE NO.
+
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION
+              REVIEW -BY R. KENDALL, OF THE  MEDICAL  DEVICES
+              BUREAU, HPB, TUNNEYS PASTURE.
+
+         o PHOTOCOPIES OF RELEVANT  DOCUMENTS                            0'3
+                THE MEDICAL DEVICES BUREAU, HPB, TUNNEYS
+                PASTURE
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION       c--> Ci
+              REVIEW -BY R. KENDALL, OF ENVIRONMENTAL HEALTH,
+              HPB, TUNNEYS PASTURE.
+
+
+         o PHOTOCOPIES OF RELEVANT  DOCUMENTS
+              - ENVIRONMENTAL HEALTH, HPB,  TUNNEYS  PASTURE.
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION
+              REVIEW -BY R. KENDALL, OF THE ACCESS TO
+              INFORMATION, TUNNEYS PASTURE.
+
+
+         o PHOTOCOPIES OF RELEVANT  DOCUMENTS
+              - ACCESS TO INFORMATION, TUNNEYS PASTURE.
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION         73
+              REVIEW -BY R. KENDALL, OF THE OFFICE OF
+              DR. J. WEBER, VIRUS BUILDING, HPB, TUNNEYS PASTURE.
+
+         o PHOTOCOPIES OF RELEVANT  DOCUMENTS
+                OFFICE OF DR. J. WEBER, VIRUS BUILDING, HPB,
+                   TUNNEYS PASTURE.
+[ 0000001 ]
+Image: <xref file="i:\hca_aa\00001\1_02.tif|0">
+------
+0000002 F ro n:t]
+
+
+
+
+         o RECORD OF EVENTS - FILE SFARCH  AND  DOCUMENTATION        0 C>  L4 c@, -7
+              REVIEW - BY R. KENDALL, IN THE DOCUMENT MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+              - BY R. KENDALL, IN THE  DOCUMENT  MANAGEMENT                -4
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION         14 a
+              REVIEW - BY W. LUNNY, IN THE  DOCUMENT  MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION
+              REVIEW - BY H. HARDY, IN THE  DOCUMENT  MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+              - BY H. HARDY, IN THE DOCUMENT MANAGEMENT
+                                                                     Lf
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION
+              REVIEW - BY W. LUNNY, IN THE  DOCUMENT  MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+              - BY W. LUNNY, IN THE DOCUMENT MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o RECORD OF EVENTS -  FILE  SEARCH AND  DOCUMENTATION
+                                                                      @-7- 9 5- 3
+              REVIEW - BY K. DUNN,  IN  THE DOCUMENT MANAGEMENT
+              DIVISION, ROOM  1301,  JEANNE MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+         o RECORD OF EVENTS -  FILE  SEARCH AND  DOCUMENTATION       S-33    5-34
+              REVIEW - BY H. HARDY, IN THE  DOCUMENT  MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+              - BY H. HARDY, IN THE DOCUMENT MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS  PASTURE.
+[ 0000002 ]
+Image: <xref file="i:\hca_aa\00001\1_03.tif|0">
+------
+0000003  Fron:t]
+
+
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION          57'1-3- 5-c/5-
+              REVIEW - BY R. KTNDALL, IN THE DOCUMENT MANAGEMENT
+              DIVISION, ROOM 1301, JEANNE  MANCE  BUILDING,
+              TUNNEYS PASTURE.
+
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION
+              REVIEW - BY  K.  DUNN, IN THE DOCUMENT MANAGEMENT
+              DIVISION,  ROOM  1301, JEANNE MANCE  BUILDING,
+              TUNNEYS PASTURE.
+
+
+         o PHOTOCOPIES  OF  RELEVANT DOCUMENTS
+              - BY K. DUNN,  IN  THE DOCUMENT MANAGEMENT                     -71c>
+              DIVISION,  ROOM  1301, JEANNE MANCE  BUILDING,
+              TUNNEYS PASTURE.
+
+
+         o RECORD OF EVENTS  -  FILE SEARCH AND  DOCUMENTATION
+              REVIEW - BY R. KENDALL, AT THE  CANADIAN  BLOOD         7       -71 L@
+              AGENCY, 85 ALBERT ST., SUITE 1110,  OTTAWA,  ONTARIO.
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+              - BY R. KENDALL, AT THE CANADIAN BLOOD
+              AGENCY, 85 ALBERT ST., SUITE 1110,  OTTAWA,  ONTARIO.   7
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION         -7 19'9- -7 -ft
+              REVIEW - BY H. HARDY, AT THE  CANADIAN  BLOOD
+              AGENCY, 85 ALBERT ST., SUITE 1110,  OTTAWA,  ONTARIO.
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+                BY H. HARDY, AT THE CANADIAN BLOOD
+                AGENCY, 85 ALBERT ST., SUITE 1110,
+                   OTTAWA,   ONTARIO.
+
+         o RECORD OF EVENTS - FILE SEARCH  AND  DOCUMENTATION          Sq 9    'c-6 5'-
+              REVIEW - BY K. DUNN, AT THE CANADIAN BLOOD
+              AGENCY, 85 ALBERT ST., SUITE 1110,  OTTAWA,  ONTARIO.
+
+         o PHOTOCOPIES OF  RELEVANT  DOCUMENTS
+                BY K. DUNN, AT THE CANADIAN BLOOD
+                AGENCY, 85 ALBERT ST., SUITE 1110,
+                   OTTAWA,   ONTARIO.
+[ 0000003 ]
+Image: <xref file="i:\hca_aa\00001\1_04.tif|0">
+------
