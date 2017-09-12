@@ -79,6 +79,6 @@ class tiffSpider(scrapy.Spider):
             lang=lang,
             builder=pyocr.builders.TextBuilder()
         )
-        TiffItem['content']=txt
+        TiffItem['tiff_content']=txt
 
         return TiffItem
