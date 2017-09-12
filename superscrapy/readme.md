@@ -23,3 +23,5 @@ Various settings can be determined, in our case, we need to ensure that the pipe
 
 ## tiff.csv & txt.csv
 Outputs from scrapy
+
+## Warning: pyOCR package only works well in Linux environment, it may or may not work in Windows/Mac system.
