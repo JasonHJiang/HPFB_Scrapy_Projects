@@ -25,4 +25,4 @@ Various settings can be determined, in our case, we need to ensure that the pipe
 Outputs from scrapy
 
 ## Be aware!
-pyOCR package only works well in Linux environment, it may or may not work in Windows/Mac system.
+pyOCR package only works well in Linux environment, it may or may not work in Windows/Mac OS system.
